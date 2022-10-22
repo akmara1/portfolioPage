@@ -1,0 +1,171 @@
+#profile{
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px white solid;
+    
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 5%;
+}
+
+@keyframes my-animation {
+  from{
+    width: 60%;
+    height: auto;
+  }
+  to{
+    width: 50%;
+    height: auto;
+  }
+}
+
+#about_text{
+    max-width: 40vmax;
+    height: auto;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name_wrapper{
+  width: 50%;
+  height: auto;
+  margin-left: 10vw;
+}
+
+.avatar{
+  margin-left: 10vw;
+  
+}
+
+.name{
+  color: #ffffff;
+  width: 7ch;
+
+  animation-name: typing;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 10em;
+  text-align: center;
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} 
+
+li{
+  font-size: 3vw;
+  text-decoration: none;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobbies, .skills{
+  font-size: 5vw;
+  text-align: center;
+}
+
+.list li img{
+  display: none;
+  width: 70vw;
+  height: auto;
+}
+
+.list li:hover img{
+  display: inline;
+  position: relative;
+}
+
+.list li:hover p{
+  display: none;
+
+}
+
+.hobbies{
+  height: 500px;
+}
+
+.skills{
+  height: 60vw;
+  align-items: center;
+}
+
+@media only screen and (max-width: 400px){
+  .hobbies .list{
+    flex-direction: column;
+  }
+  body{
+    width: 100%;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+    
+  }
+
+  .avatar{
+    padding: auto 0;
+    margin-left: 19vw;
+  }
+
+  .name_wrapper{
+    padding: auto 0;
+  }
+
+  table{
+    font-size: 3vw;
+  } 
+
+  button{
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+}
+
+table{
+  font-size: 2vw;
+}
+
+#button{
+  width: 120px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 30%;
+  margin-left: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  background-color: green;
+}
+
+
+
+
+
